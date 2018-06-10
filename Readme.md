@@ -69,7 +69,7 @@ The model used an adam optimizer, so the learning rate was not tuned manually [`
 
 #### Training data
 
-Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road with steering angles correction 0.3 `model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) `line 27`.
+Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road with steering angles correction 0.3 [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) `line 27`.
 
 For details about how I created the training data, see the next section. 
 
@@ -83,7 +83,7 @@ My first step was to use a convolution neural network model similar to the AlexN
 
 In order to gauge how well the model was working, I split my images and steering angle data into a training and validation set. Usually I had less validation loss in the first one-two epochs, but of course later training loss became lower than validation loss. I kept training as well as validation and training losses decreasing. It took me 5 iterations. 
 
-The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track. To improve the driving behavior in these cases, I made correction `model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) `lines 43-46`. 
+The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track. To improve the driving behavior in these cases, I made correction [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) `lines 43-46`. 
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
