@@ -47,29 +47,29 @@ The [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master
 
 #### Architecture
 
-The model architecture is similar to [Nvidia](https://devblogs.nvidia.com/deep-learning-self-driving-cars/) with small corrections. My model consists of a convolution neural network with filter sizes between 3x3 and 5x5; depths between 8 and 20 in Convolution layers and between 1-100 in Dense layers `[model.py](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) lines 91-105`
+The model architecture is similar to [Nvidia](https://devblogs.nvidia.com/deep-learning-self-driving-cars/) with small corrections. My model consists of a convolution neural network with filter sizes between 3x3 and 5x5; depths between 8 and 20 in Convolution layers and between 1-100 in Dense layers [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) `lines 91-105`
 
 The model includes RELU layers to introduce nonlinearity.
 Additionally the data was:
-* Normalized in the model using a Keras lambda layer [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) line 94
-* Cropped `code line 92`
-* Decrease image depth to 1 instead of 3 (in line 93 with helping functions in [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) lines 83-87.
+* Normalized in the model using a Keras lambda layer [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) `line 94`
+* Cropped [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) `line 92`
+* Decrease image depth to 1 instead of 3 (in `line 93` with helping functions in [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) `lines 83-87`.
 
 #### Overfitting in the model
 
 The model doesn't contain dropout layers in order to reduce overfitting. Instead of that I checked the model MSE on training and validation set. 
 
-The model was trained and validated on different data sets to ensure that the model was not overfitting [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) line 116-122. The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+The model was trained and validated on different data sets to ensure that the model was not overfitting [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) `line 116-122`. The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
 ![alt text][image3]
 
 #### Model parameters
 
-The model used an adam optimizer, so the learning rate was not tuned manually [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) line 105.
+The model used an adam optimizer, so the learning rate was not tuned manually [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) `line 105`.
 
 #### Training data
 
-Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road with steering angles correction 0.3 (`model.py line 27`).
+Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road with steering angles correction 0.3 `model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) `line 27`.
 
 For details about how I created the training data, see the next section. 
 
@@ -83,13 +83,13 @@ My first step was to use a convolution neural network model similar to the AlexN
 
 In order to gauge how well the model was working, I split my images and steering angle data into a training and validation set. Usually I had less validation loss in the first one-two epochs, but of course later training loss became lower than validation loss. I kept training as well as validation and training losses decreasing. It took me 5 iterations. 
 
-The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track. To improve the driving behavior in these cases, I made correction (`model.py lines 43-46`). 
+The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track. To improve the driving behavior in these cases, I made correction `model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) `lines 43-46`. 
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
 #### Final Model Architecture
 
-The final model architecture [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) lines 91-105 consisted of five convolution layers followed by three dense layers. The depth of layers:
+The final model architecture [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) `lines 91-105` consisted of five convolution layers followed by three dense layers. The depth of layers:
 * Convolutions: 8, 12, 16, 20 and 20
 * Dense: 100, 50, 10
 
