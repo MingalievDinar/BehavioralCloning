@@ -47,7 +47,7 @@ The [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master
 
 #### Architecture
 
-The model architecture is similar to [Nvidia](https://devblogs.nvidia.com/deep-learning-self-driving-cars/) with small corrections. My model consists of a convolution neural network with filter sizes between 3x3 and 5x5; depths between 8 and 20 in Convolution layers and between 1-100 in Dense layers [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) lines 91-105
+The model architecture is similar to [Nvidia](https://devblogs.nvidia.com/deep-learning-self-driving-cars/) with small corrections. My model consists of a convolution neural network with filter sizes between 3x3 and 5x5; depths between 8 and 20 in Convolution layers and between 1-100 in Dense layers `[model.py](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) lines 91-105`
 
 The model includes RELU layers to introduce nonlinearity.
 Additionally the data was:
