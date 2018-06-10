@@ -37,7 +37,7 @@ python drive.py model.h5
 The simulator looks like:
 ![alt text][image4]
 ![alt text][image5]
-You can download if from the [link](https://classroom.udacity.com/nanodegrees/nd013/parts/fbf77062-5703-404e-b60c-95b78b2f3f9e/modules/6df7ae49-c61c-4bb2-a23e-6527e69209ec/lessons/46a70500-493e-4057-a78e-b3075933709d/concepts/1c9f7e68-3d2c-4313-9c8d-5a9ed42583dc)
+You can download it from the [link](https://classroom.udacity.com/nanodegrees/nd013/parts/fbf77062-5703-404e-b60c-95b78b2f3f9e/modules/6df7ae49-c61c-4bb2-a23e-6527e69209ec/lessons/46a70500-493e-4057-a78e-b3075933709d/concepts/1c9f7e68-3d2c-4313-9c8d-5a9ed42583dc)
 
 #### Pipline
 
@@ -114,7 +114,7 @@ I used this training data for training the model. The validation set helped to d
 
 You can see the final car's modeled behavior on a track:
 
-<video src="SDCSimulation.mp4" poster="./Images/videosim.jpeg" width="320" height="200" controls preload></video>
+<video src="SDCSimulation.mp4" width="320" height="200" controls preload></video>
 
 Youtube [![Little red ridning hood](./Images/videosim.jpeg)](https://youtu.be/v2irPlgY1o0 "Video example - Click to Watch!")
 
