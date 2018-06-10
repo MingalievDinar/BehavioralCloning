@@ -112,9 +112,7 @@ I finally randomly shuffled the data set and put 30% of the data into a validati
 
 I used this training data for training the model. The validation set helped to determine if the model was over or under fitted. The ideal number of epochs was 5 (in more epochs validation loss starts rising). I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
-You can see the final car's modeled behavior on a track:
+You can see the final car's modeled behavior on a track on Youtube [![Little red ridning hood](./Images/videosim.jpeg)](https://youtu.be/v2irPlgY1o0 "Video example - Click to Watch!")
 
-<video src="SDCSimulation.mp4" width="320" height="200" controls preload></video>
-
-Youtube [![Little red ridning hood](./Images/videosim.jpeg)](https://youtu.be/v2irPlgY1o0 "Video example - Click to Watch!")
+The original video can be downloaded [here](https://github.com/MingalievDinar/BehavioralCloning/blob/master/SDCSimulation.mp4)
 
