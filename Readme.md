@@ -25,9 +25,9 @@ The goals / steps of this project are the following:
 #### 1. In the repo you can find all files required to run the simulator in autonomous mode
 
 My project includes the following files:
-* `model.py` containing the script to create and train the model
-* `drive.py` for driving the car in autonomous mode
-* `model.h5` containing a trained convolution neural network 
+* [`model.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.py) containing the script to create and train the model
+* [`drive.py`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/drive.py) for driving the car in autonomous mode
+* [`model.h5`](https://github.com/MingalievDinar/BehavioralCloning/blob/master/model.h5) containing a trained convolution neural network 
 
 #### How to run the simulator
 Using the Udacity provided simulator and my `drive.py` file, the car can be driven autonomously around the track by executing 
@@ -112,7 +112,7 @@ I finally randomly shuffled the data set and put 30% of the data into a validati
 
 I used this training data for training the model. The validation set helped to determine if the model was over or under fitted. The ideal number of epochs was 5 (in more epochs validation loss starts rising). I used an adam optimizer so that manually training the learning rate wasn't necessary.
 
-You can see the final car's modeled behavior on a track on Youtube [![Little red ridning hood](./Images/videosim.jpeg)](https://youtu.be/v2irPlgY1o0 "Video example - Click to Watch!")
+You can see the final car's modeled behavior on a track on Youtube: [![Little red ridning hood](./Images/videosim.jpeg)](https://youtu.be/v2irPlgY1o0 "Video example - Click to Watch!")
 
 The original video can be downloaded [here](https://github.com/MingalievDinar/BehavioralCloning/blob/master/SDCSimulation.mp4)
 
